@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<title>Rule 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Julius+Sans+One&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+				body {background-image: url("PPE.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		font-family: 'Archivo Black', sans-serif;
+		color:white;
+		letter-spacing:4px;}
+		.wrapper{position:fixed;
+				top:0; left:0; right:0; bottom:0;
+				height:auto;
+				width:1890px;
+				margin:0px;padding:0px;
+				width: 100%;
+				opacity:95%;
+				display:grid;
+				grid-template-rows:16fr  1fr;
+				grid-template-columns:1fr 5fr;
+				grid-template-areas:
+					"nav-bar main"
+					"nav-bar footer";}
+		
+		.nav-bar { grid-area:nav-bar;
+					grid-row:1/3;background-color:#545454;opacity:92%}
+		.main {grid-area:main;
+				grid-column:2/2; 
+				font-size:32px;}
+		.footer {grid-area:footer; grid-column: 2/3;
+				background-color:#222222;opacity:99%;}
+		.text-box{background-image: linear-gradient(130deg,#ff6700 15%,transparent);
+				position:absolute;width:100%;height:100%;
+				background-image: opacity(10%);}
+		.pop-quiz {margin-left:250px;margin-top:130px;font-family:"calibri", sans-serif; letter-spacing:10px;
+					background-color:rgba(0,0,0,50%);padding:15px;width:40%; height:auto;text-align:left;
+					border-radius:20px;
+					opacity:0%;
+					animation-name: appear;
+					animation-duration:.75s;
+					animation-delay:2s;
+					animation-iteration-count:1;
+					animation-fill-mode:forwards;}
+		.answer-choices {margin-top:60px;margin-left:350px;font-family:"calibri",sans-serif;
+						opacity: 0%;
+						animation-name: appear;
+						animation-duration:.75s;
+						animation-delay:4.0s;
+						animation-iteration-count:1;
+						animation-fill-mode:forwards;
+						color:black;
+						font-weight:bold;
+						font-size:34px}
+		.footer > li:hover {text-color:white;}
+		.quiz-button{width:auto;height:auto;padding:10px;font-weight:bold;border:none;font-size:24px;border-radius:5px;margin:0;margin-bottom:5px;}
+		#content {margin-left:120px;margin-top:300px; line-height:100px;}
+		#underline-at-all-times {text-decoration:underline;}
+		#subtitle {margin-left:180px;margin-top:-30px; font-style:italic;width:55%;color:black;font-size:36px;}
+		#hint {position:relative;margin-bottom:8px;margin-left:50px;color:#FF6700;font-size:22px}
+		#footer-copyright {position:absolute;;margin-left:1500px;margin-top:-30px;}
+		#nav-list {list-style-type:none;line-height:50px;margin-top:180px;margin-left:200px;}
+		#hint span {visibility:hidden;}
+		#hint:hover span {visibility:visible;}
+		#home {width:100px; height:auto;margin-top:320px;margin-left:230px;}
+		#hint-text {font-family:"calibri", sans-serif;}
+		#you-are-here{color:#FF6700; text-decoration:underline;}
+		@keyframes appear {0% {opacity:0%}
+			25% {opacity:30%}
+			50% {opacity:50%}
+			75% {opacity:75%}
+			100% {opacity:100%}}
+			
+		
+		
+		
+		
+		
+		
+	
+	</style>
+</head>	
+
+	<body>
+		
+<div class="wrapper"><!--Wrapper-->
+			
+  <div class="title"> </div> <!--Title-->
+  <div class="nav-bar"> <!--Nav Bar-->
+	<nav>
+	  <ul id="nav-list">
+						<li> <span id="you-are-here">RULE 1</span></li>
+		 			    <li> <a href="rule2.html">RULE 2</a></li>
+						<li> <a href="rule3.html">RULE 3</a></li>
+		  				<li> <a href="rule4.html">RULE 4</a></li>
+						<li> <a href="rule5.html">RULE 5</a></li>
+						<li> <a href="rule6.html">RULE 6</a></li>
+						<li> <a href="rule7.html">RULE 7</a></li>
+						<li> <a href="rule8.html">RULE 8</a></li>
+						<li> <a href="rule9.html">RULE 9</a></li>
+						<li> <a href="rule10.html">RULE 10</a></li>
+						<li> <a href="rule11.html">RULE 11</a></li>
+						<li> <a href="rule12.html">RULE 12</a></li>
+						<li> <span id="underline">FINAL QUIZ</span></li>
+					</ul>
+	  </nav>
+	</div> <!--End of Nav Bar-->
+	
+	
+			<div class="main"> <!--Main Section-->
+				<div class="text-box"><h1 id="content">PERSONAL PROTECTIVE EQUIPMENT</h1>
+			  <h5 id="subtitle">Wear proper PPE for the job you are doing, <span id="underline-at-all-times">at all times</span>.</h5>
+					<p class="pop-quiz">Who is responsible for providing you with proper PPE?</p>
+						
+					<!--Placeholder for Future Java Script Quiz-->
+						<ol class="answer-choices" type="A">
+							<li><button class="quiz-button" onclick="alertIncorrect()">OSHA</button></li>
+							<li>Your Self</li>
+							<li>Your Employer</li>
+							<li>It depends on the situation.</li>
+					
+						</ol>
+						<!--Placeholder for Future Java Script Quiz-->
+				</div>
+			
+				
+			</div> <!--End of Main Section-->
+	
+	
+			<div class="footer"> <!--Footer-->
+				<div id="bottom-menu">	
+				<p id="hint">HINT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="hint-text">The type of PPE required depends on the job, but the responsibility to provide it <br> remains the same (see pg. 6).</span></p>
+				</div><!--Hint Div-->
+				<h4 id="footer-copyright">&#169; 2020 Ranger Construction Industries, Inc. </h4>
+			
+				
+			</div> <!--End of Footer-->
+		
+	</div>  <!--End of Wrapper-->
+	<script src="/quizInteractions.js"></script>
+	
+	</body>
+</html>
