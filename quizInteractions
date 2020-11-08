@@ -1,0 +1,2 @@
+// JavaScript Document
+function alertIncorrect() {alert("Incorrect, try again.");}
